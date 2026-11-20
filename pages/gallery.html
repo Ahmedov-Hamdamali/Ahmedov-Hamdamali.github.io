@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Галерея | Владимир Маяковский</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        .gallery-content {
+            padding: 70px 7%;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 45px;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            background: #f0f0f0;
+            color: #111;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            display: block;
+            filter: grayscale(100%);
+            transition: 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            filter: grayscale(0%);
+            transform: scale(1.04);
+        }
+
+        .gallery-item p {
+            padding: 18px;
+            margin: 0;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .gallery-number {
+            color: #888;
+            margin-right: 8px;
+        }
+
+        @media (max-width: 850px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 550px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="header">
+
+    <a href="../index.html" class="logo">
+        АХМЕДОВ Х <span>ПРЕДСТАВЛЯЕТ</span>
+    </a>
+
+    <nav class="navigation">
+        <a href="../index.html">Главная</a>
+        <a href="biography.html">Биография</a>
+        <a href="works.html">Произведения</a>
+        <a href="facts.html">Интересные факты</a>
+        <a href="gallery.html">Галерея</a>
+        <a href="life.html">Личная жизнь</a>
+        <a href="legacy.html">Наследие</a>
+        <a href="futurism.html">Футуризм</a>
+    </nav>
+
+</header>
+
+<main class="bio-page">
+
+    <section class="bio-hero">
+
+        <p class="section-label">04 / ВИЗУАЛЬНЫЙ АРХИВ</p>
+
+        <h1>ФОТО<br>ГАЛЕРЕЯ</h1>
+
+        <p class="bio-subtitle">
+            Жизнь Владимира Маяковского
+            в исторических фотографиях.
+        </p>
+
+        <div class="bio-years">1893 — 1930</div>
+
+    </section>
+
+    <section class="gallery-content">
+
+        <p class="section-label">ФОТОГРАФИЧЕСКИЙ АРХИВ</p>
+
+        <h2>МАЯКОВСКИЙ В КАДРЕ</h2>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Mayakovsky-1910.jpg"
+                    alt="Маяковский, 1910 год">
+                <p><span class="gallery-number">01</span> МОЛОДОСТЬ — 1910</p>
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Mayakovsky%201912.jpg"
+                    alt="Маяковский, 1912 год">
+                <p><span class="gallery-number">02</span> 1912 ГОД</p>
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Mayakovsky%201915.jpg"
+                    alt="Маяковский, 1915 год">
+                <p><span class="gallery-number">03</span> 1915 ГОД</p>
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Mayakovsky%201925.jpg"
+                    alt="Маяковский, 1925 год">
+                <p><span class="gallery-number">04</span> 1925 ГОД</p>
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Mayakovsky%201928%20by%20Osip%20Brik.jpg"
+                    alt="Маяковский, 1928 год">
+                <p><span class="gallery-number">05</span> 1928 ГОД</p>
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Mayakovsky%201930%20a.jpg"
+                    alt="Маяковский, 1930 год">
+                <p><span class="gallery-number">06</span> 1930 ГОД</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="bio-back">
+        <a href="../index.html">← ВЕРНУТЬСЯ НА ГЛАВНУЮ</a>
+    </div>
+
+</main>
+
+<footer class="footer">
+    <h2>АХМЕДОВ Х ПРЕДСТАВЛЯЕТ</h2>
+    <p>Проект, посвящённый Владимиру Маяковскому</p>
+    <p>© 2026</p>
+</footer>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>
