@@ -1410,7 +1410,20 @@ body {
 }
 
 .work-card:hover {
-    background: #302b27;
+    background: #817f7e;
     border-color: #c03935;
+}
+
+/* ТОЧНОЕ СОВПАДЕНИЕ ФОТОГРАФИИ С РАМКОЙ */
+
+.hero-image::before,
+.hero-image::after {
+    display: none !important;
+    content: none !important;
+}
+
+.hero-image img {
+    border: 2px solid var(--red);
+    box-sizing: border-box;
 }
 
